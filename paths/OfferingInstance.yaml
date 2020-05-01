@@ -20,8 +20,6 @@ get:
               - $ref: '../schemas/ProgramOffering.yaml'
               - $ref: '../schemas/CourseOffering.yaml'
               - $ref: '../schemas/ComponentOffering.yaml'
-            discriminator:
-              propertyName: type
     '404':
       description: Not Found
       content:

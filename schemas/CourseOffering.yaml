@@ -8,3 +8,16 @@ allOf:
       period:
         type: string
         description: The period in which this offering is offered
+      _links:
+        type: object
+        properties:
+          course:
+            type: object
+            description: Link to parent course
+            required:
+              - href
+            properties:
+              href:
+                type: string
+                format: uri
+                example: /courses/123

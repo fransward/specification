@@ -6,13 +6,6 @@ properties:
   offeringId:
     type: string
     description: Unique id of this offering
-  type:
-    type: string
-    description: Type of this offering
-    enum:
-      - program
-      - course
-      - component
   maxNumberStudents:
     type: number
     description: The maximum number of students allowd to enroll for this offering

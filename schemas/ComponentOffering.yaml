@@ -5,6 +5,16 @@ allOf:
       _links:
         type: object
         properties:
+          component:
+            type: object
+            description: Link to parent component
+            required:
+              - href
+            properties:
+              href:
+                type: string
+                format: uri
+                example: /components/123
           rooms:
             type: array
             description: Links to the room(s) where this offering will take place

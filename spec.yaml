@@ -132,12 +132,3 @@ paths:
     $ref: paths/NewsItemCollection.yaml
   /news-items/{newsItemId}:
     $ref: paths/NewsItemInstance.yaml
-# Workaround for https://github.com/Redocly/redoc/issues/862
-components:
-  schemas:
-    program:
-      $ref: 'schemas/ProgramOffering.yaml'
-    course:
-      $ref: 'schemas/CourseOffering.yaml'
-    component:
-      $ref: 'schemas/ComponentOffering.yaml'
