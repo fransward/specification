@@ -73,11 +73,21 @@ properties:
             example: /programs/123
       courses:
         type: object
-        description: Link to the list of courses for this program
+        description: Link to the list of courses given through this program
         required:
           - href
         properties:
           href:
             type: string
             format: uri
-            example: /courses?program=123
+            example: /programs/123/courses
+      offerings:
+        type: object
+        description: Link to the list of offerings given through this program
+        required:
+          - href
+        properties:
+          href:
+            type: string
+            format: uri
+            example: /programs/123/offerings
