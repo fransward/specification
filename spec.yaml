@@ -1,6 +1,6 @@
-openapi: '3.0.2'
+openapi: '3.0.3'
 info:
-  version: 3.0
+  version: '4.0-DRAFT'
   title: Open Education API
   description: |
     OpenAPI (fka Swagger) specification for the Open Education API.
