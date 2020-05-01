@@ -30,9 +30,9 @@ get:
       required: false
       schema:
         type: string
-    - name: educationalProgramme
+    - name: program
       in: query
-      description: Filter by educational programme (educationalProgrammeId)
+      description: Filter by program (programId)
       required: false
       schema:
         type: string

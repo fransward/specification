@@ -1,12 +1,12 @@
 get:
-  summary: GET /educational-programmes/{educationalProgrammeId}
-  description: Get a single educational programme.
+  summary: GET /programs/{programId}
+  description: Get a single program.
   tags:
-    - educational programmes
+    - programs
   parameters:
-    - name: educationalProgrammeId
+    - name: programId
       in: path
-      description: Educational programme ID
+      description: Program ID
       required: true
       schema:
         type: string
@@ -16,7 +16,7 @@ get:
       content:
         application/hal+json:
           schema:
-            $ref: '../schemas/EducationalProgramme.yaml'
+            $ref: '../schemas/Program.yaml'
     '404':
       description: Not Found
       content:

@@ -1,8 +1,8 @@
 get:
-  summary: GET /educational-programmes
-  description: Get an ordered list of all educational programmes.
+  summary: GET /programs
+  description: Get an ordered list of all programs.
   tags:
-    - educational programmes
+    - programs
   parameters:
     - $ref: '../parameters/pageSize.yaml'
     - $ref: '../parameters/pageNumber.yaml'
@@ -10,7 +10,7 @@ get:
       in: query
       description: The field to sort on
       required: false
-      default: educationalPprogrammeId_asc
+      default: programId_asc
       schema:
         type: string
     - name: student
@@ -43,7 +43,7 @@ get:
                   items:
                     type: array
                     items:
-                      $ref: '../schemas/EducationalProgramme.yaml'
+                      $ref: '../schemas/Program.yaml'
               _links:
                 type: object
                 required:

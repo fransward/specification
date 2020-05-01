@@ -1,27 +1,27 @@
 type: object
 required:
-  - educationalProgrammeId
+  - programId
   - name
   - termStartDate
   - _links
 properties:
-  educationalProgrammeId:
+  programId:
     type: string
-    description: Unique id for this educational programme
+    description: Unique id for this program
   name:
     type: string
-    description: The name of this educational programme
+    description: The name of this program
   description:
     type: string
-    description: The description of this educational programme
-  termStartDate:
-    type: string
-    description: The day on which this educational programme starts, RFC3339 (full-date)
-    format: date
-  termEndDate:
-    type: string
-    description: The day on which this educational programme ends, RFC3339 (full-date)
-    format: date
+    description: The description of this program
+  # termStartDate:
+  #   type: string
+  #   description: The day on which this program starts, RFC3339 (full-date)
+  #   format: date
+  # termEndDate:
+  #   type: string
+  #   description: The day on which this program ends, RFC3339 (full-date)
+  #   format: date
   ects:
     type: number
     description: The number of EC's that can be archieved in this educational plan
@@ -33,11 +33,11 @@ properties:
     example: nl-NL
   qualificationAwarded:
     type: string
-    description: Type of qualificaton that can be obtained on finishing the programme
+    description: Type of qualificaton that can be obtained on finishing the program
     example: Bachelor of Arts, or Bachelor of Nursing
-  lenghtOfProgramme:
-    type: number
-    description: The lenght of the programme specified in months
+  # lenghtOfProgram:
+  #   type: number
+  #   description: The length of the program specified in months
   levelOfQualification:
     type: string
     description: Level of qualification according to the National Qualification Framework and the European Qualifications Framework
@@ -46,15 +46,15 @@ properties:
     type: string
     description: Field(s) of study (e.g. ISCED-F) (http://uis.unesco.org/sites/default/files/documents/isced-fields-of-education-and-training-2013-en.pdf.
     example: e.g. 0732 Building and civil engineering
-  profileOfProgramme:
+  profileOfProgram:
     type: string
-    description:  brief description of the main focus of the programme.
-  programmeLearningOutcomes:
+    description: Brief description of the main focus of the program.
+  programLearningOutcomes:
     type: string
-    description: List the learning outcomes at programme level. It is advisable to limit the number of learning outcomes to approximately 20. It is also advisable to make sure that the programme learning outcomes in the course catalogue correspond with those on the Diploma Supplement.
+    description: List the learning outcomes at program level. It is advisable to limit the number of learning outcomes to approximately 20. It is also advisable to make sure that the program learning outcomes in the course catalogue correspond with those on the Diploma Supplement.
   modeOfStudy:
     type: string
-    description: Indicate whether the programme is e.g. full-time, part-time, dual, e-learning.
+    description: Indicate whether the program is e.g. full-time, part-time, dual, e-learning.
     example: full-time, part-time, dual, e-learning.
   _links:
     type: object
@@ -70,14 +70,14 @@ properties:
           href:
             type: string
             format: uri
-            example: /v3/educational-programmes/123
+            example: /v3/programs/123
       courses:
         type: object
-        description: Link to the list of courses for this educational programme
+        description: Link to the list of courses for this program
         required:
           - href
         properties:
           href:
             type: string
             format: uri
-            example: /v3/courses?educationalProgramme=123
+            example: /v3/courses?program=123

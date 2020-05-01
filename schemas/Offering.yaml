@@ -1,0 +1,23 @@
+type: object
+required:
+  - offeringId
+  - _links
+properties:
+  offeringId:
+    type: string
+    description: Unique id for this offering
+  _links:
+    type: object
+    required:
+      - self
+    properties:
+      self:
+        type: object
+        description: Link to current resource
+        required:
+          - href
+        properties:
+          href:
+            type: string
+            format: uri
+            example: /v3/offerings/123
