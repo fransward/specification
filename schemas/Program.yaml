@@ -24,12 +24,12 @@ properties:
   #   format: date
   ects:
     type: number
-    description: The number of EC's that can be archieved in this educational plan
+    description: The number of EC's that can be archieved in this program
     format: int32
     minimum: 0
   mainLanguage:
     type: string
-    description: The main language in which the courses within this education plan are given, RFC3066
+    description: The main language in which the courses within this program are given, RFC3066
     example: nl-NL
   qualificationAwarded:
     type: string
