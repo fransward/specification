@@ -20,7 +20,7 @@ properties:
     type: number
     description: The number of students that have already enrolled for this course offering
     format: int32
-    minimum: 0  
+    minimum: 0
   academicYear:
     type: string
     description: The year in which this courseOffering takes place
@@ -41,7 +41,7 @@ properties:
           href:
             type: string
             format: uri
-            example: /v3/course-offerings/123
+            example: /course-offerings/123
       lecturers:
         type: array
         description: Links to the lecturers (persons) that are responsible for this course (ECTS)
@@ -54,7 +54,7 @@ properties:
             href:
               type: string
               format: uri
-              example: /v3/persons/123
+              example: /persons/123
             title:
               type: string
               description: The display name of the person
@@ -67,4 +67,4 @@ properties:
           href:
             type: string
             format: uri
-            example: /v3/schedules?courseOffering=123
+            example: /schedules?courseOffering=123

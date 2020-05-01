@@ -73,7 +73,7 @@ properties:
           href:
             type: string
             format: uri
-            example: /v3/institution
+            example: /institution
       programs:
         type: object
         description: Link to the list of programs at this institution
@@ -83,4 +83,4 @@ properties:
           href:
             type: string
             format: uri
-            example: /v3/programs
+            example: /programs

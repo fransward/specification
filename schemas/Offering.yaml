@@ -20,4 +20,4 @@ properties:
           href:
             type: string
             format: uri
-            example: /v3/offerings/123
+            example: /offerings/123

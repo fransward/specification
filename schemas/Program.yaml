@@ -70,7 +70,7 @@ properties:
           href:
             type: string
             format: uri
-            example: /v3/programs/123
+            example: /programs/123
       courses:
         type: object
         description: Link to the list of courses for this program
@@ -80,4 +80,4 @@ properties:
           href:
             type: string
             format: uri
-            example: /v3/courses?program=123
+            example: /courses?program=123

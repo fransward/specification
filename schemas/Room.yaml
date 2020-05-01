@@ -46,7 +46,7 @@ properties:
           href:
             type: string
             format: uri
-            example: /v3/rooms/123
+            example: /rooms/123
       building:
         type: object
         description: Link to the building in which the room is located
@@ -57,7 +57,7 @@ properties:
           href:
             type: string
             format: uri
-            example: /v3/buildings/123
+            example: /buildings/123
           title:
             type: string
             description: The name of the building

@@ -33,7 +33,7 @@ properties:
           href:
             type: string
             format: uri
-            example: /v3/schedules/123
+            example: /schedules/123
       courseOfferings:
         type: array
         description: Links to the coursOfferings affiliated to this schedule
@@ -46,7 +46,7 @@ properties:
             href:
               type: string
               format: uri
-              example: /v3/course-offerings/123
+              example: /course-offerings/123
             title:
               type: string
               description: The name of the course offering
@@ -62,7 +62,7 @@ properties:
             href:
               type: string
               format: uri
-              example: /v3/tests/123
+              example: /tests/123
             title:
               type: string
               description: The name of the test
@@ -78,7 +78,7 @@ properties:
             href:
               type: string
               format: uri
-              example: /v3/rooms/123
+              example: /rooms/123
             title:
               type: string
               description: The name of the room
@@ -94,7 +94,7 @@ properties:
             href:
               type: string
               format: uri
-              example: /v3/persons/123
+              example: /persons/123
             title:
               type: string
               description: The name of the person

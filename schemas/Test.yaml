@@ -27,7 +27,7 @@ properties:
           href:
             type: string
             format: uri
-            example: /v3/tests/123
+            example: /tests/123
       courses:
         type: object
         description: Link to the course for wihch this test is created
@@ -37,4 +37,4 @@ properties:
           href:
             type: string
             format: uri
-            example: /v3/courses/123
+            example: /courses/123
