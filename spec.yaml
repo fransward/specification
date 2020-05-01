@@ -31,8 +31,8 @@ tags:
     description: The persons API provides information about persons related to an educational institute.
   - name: faculties
     description: The faculties API provides The organizational parts of an organization (faculty, cluser, domain, etc.) Types can be extended in the metadata service.
-  - name: educational departments
-    description: The educational departments API provides the organizational department that is responsible for the execution and recognition of courses.
+  - name: departments
+    description: The departments API provides the organizational department that is responsible for the execution and recognition of courses.
   - name: educational plans
     description: The educational plans API provides a coherent set of educational components, that a person is currently working on or is planning on completing. Usually based on a program.
   - name: programs
@@ -68,10 +68,10 @@ paths:
     $ref: paths/FacultyCollection.yaml
   /faculties/{facultyId}:
     $ref: paths/FacultyInstance.yaml
-  /educational-departments:
-    $ref: paths/EducationalDepartmentCollection.yaml
-  /educational-departments/{educationalDepartmentId}:
-    $ref: paths/EducationalDepartmentInstance.yaml
+  /departments:
+    $ref: paths/DepartmentCollection.yaml
+  /departments/{DepartmentId}:
+    $ref: paths/DepartmentInstance.yaml
   /educational-plans:
     $ref: paths/EducationalPlanCollection.yaml
   /educational-plans/{educationalPlanId}:

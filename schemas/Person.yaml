@@ -85,16 +85,16 @@ properties:
             type: string
             format: uri
             example: /persons/123
-      educationalDepartments:
+      departments:
         type: object
-        description: Link to the list of educational departments with which this person is affiliated
+        description: Link to the list of departments with which this person is affiliated
         required:
           - href
         properties:
           href:
             type: string
             format: uri
-            example: /educational-departments?student=123
+            example: /departments?student=123
       educationalPlans:
         type: object
         description: Link to the list of educational plans with which this person is affiliated

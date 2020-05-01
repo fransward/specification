@@ -154,9 +154,9 @@ properties:
             title:
               type: string
               description: The name of the faculty
-      educationalDepartments:
+      departments:
         type: array
-        description: Links to the educational departments where this course is given
+        description: Links to the departments where this course is given
         items:
           type: object
           required:
@@ -166,10 +166,10 @@ properties:
             href:
               type: string
               format: uri
-              example: /educationalDepartments/123
+              example: /departments/123
             title:
               type: string
-              description: The name of the educational department
+              description: The name of the department
       educationalPlans:
         type: array
         description: Links to the educational plans where this course is part of

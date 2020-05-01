@@ -1,18 +1,18 @@
 type: object
 required:
-  - educationalDepartmentId
+  - departmentId
   - name
   - _links
 properties:
-  educationalDepartmentId:
+  departmentId:
     type: string
-    description: Unique id for this educational department
+    description: Unique id for this department
   name:
     type: string
-    description: The name of this educational department
+    description: The name of this department
   description:
     type: string
-    description: The description of this educational department
+    description: The description of this department
   _links:
     type: object
     required:
@@ -27,10 +27,10 @@ properties:
           href:
             type: string
             format: uri
-            example: /educational-departments/123
+            example: /departments/123
       educationalPlans:
         type: array
-        description: Links to the educational plans for this educational department
+        description: Links to the educational plans for this department
         items:
           type: object
           required:
@@ -46,11 +46,11 @@ properties:
               description: The name of the educational plan
       courses:
         type: object
-        description: Link to the list of courses for this educational department
+        description: Link to the list of courses for this department
         required:
           - href
         properties:
           href:
             type: string
             format: uri
-            example: /courses?educationalDepartment=123
+            example: /courses?department=123

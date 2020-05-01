@@ -1,12 +1,12 @@
 get:
-  summary: GET /educational-departments/{educationalDepartmentId}
-  description: Get a single educational department.
+  summary: GET /departments/{departmentId}
+  description: Get a single department.
   tags:
-    - educational departments
+    - departments
   parameters:
-    - name: educationalDepartmentId
+    - name: departmentId
       in: path
-      description: educational department ID
+      description: department ID
       required: true
       schema:
         type: string
@@ -16,7 +16,7 @@ get:
       content:
         application/hal+json:
           schema:
-            $ref: '../schemas/EducationalDepartment.yaml'
+            $ref: '../schemas/Department.yaml'
     '404':
       description: Not Found
       content:

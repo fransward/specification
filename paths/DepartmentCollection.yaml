@@ -1,8 +1,8 @@
 get:
-  summary: GET /educational-departments
-  description: Get an ordered list of all educational departments.
+  summary: GET /departments
+  description: Get an ordered list of all departments.
   tags:
-    - educational departments
+    - departments
   parameters:
     - $ref: '../parameters/pageSize.yaml'
     - $ref: '../parameters/pageNumber.yaml'
@@ -47,7 +47,7 @@ get:
                   items:
                     type: array
                     items:
-                      $ref: '../schemas/EducationalDepartment.yaml'
+                      $ref: '../schemas/Department.yaml'
               _links:
                 type: object
                 required:
