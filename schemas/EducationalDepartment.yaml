@@ -44,16 +44,6 @@ properties:
             title:
               type: string
               description: The name of the educational plan
-      courseGroups:
-        type: object
-        description: Link to list of course groups for this educational department
-        required:
-          - href
-        properties:
-          href:
-            type: string
-            format: uri
-            example: /course-groups?educationalDepartment=123
       courses:
         type: object
         description: Link to the list of courses for this educational department

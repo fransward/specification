@@ -105,16 +105,6 @@ properties:
             type: string
             format: uri
             example: /educational-plans?student=123
-      courseGroups:
-        type: object
-        description: Link to the list of course groups for this person
-        required:
-          - href
-        properties:
-          href:
-            type: string
-            format: uri
-            example: /course-groups?student=123
       courses:
         type: object
         description: Link to the list of courses for this person

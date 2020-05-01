@@ -94,16 +94,6 @@ properties:
             title:
               type: string
               description: The name of the educational plan
-      courseGroups:
-        type: object
-        description: Link to the list of course groups of this faculty
-        required:
-          - href
-        properties:
-          href:
-            type: string
-            format: uri
-            example: /course-groups?faculty=123
       courses:
         type: object
         description: Link to the list of courses for this faculty

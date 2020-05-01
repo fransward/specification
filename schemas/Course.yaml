@@ -202,19 +202,3 @@ properties:
             title:
               type: string
               description: The name of the program
-      courseGroup:
-        type: array
-        description: Links to the course groups where this course is part of
-        items:
-          type: object
-          required:
-            - href
-            - title
-          properties:
-            href:
-              type: string
-              format: uri
-              example: /courseGroups/123
-            title:
-              type: string
-              description: The name of the course group

@@ -36,12 +36,6 @@ get:
       required: false
       schema:
         type: string
-    - name: courseGroup
-      in: query
-      description: Filter by course group (courseGroupId)
-      required: false
-      schema:
-        type: string
   responses:
     '200':
       description: OK
