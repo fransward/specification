@@ -1,5 +1,5 @@
 get:
-  summary: GET /courses/{courseId}/course-offerings
+  summary: GET /courses/{courseId}/offerings
   description: Get a list of all course offerings, ordered by name (ascending).
   tags:
     - courses
