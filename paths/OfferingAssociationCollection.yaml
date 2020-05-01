@@ -1,12 +1,12 @@
 get:
-  summary: GET /courses/{courseId}/offerings
-  description: Get a list of all course offerings, ordered by name (ascending).
+  summary: GET /offerings/{offeringId}/associations
+  description: Get a list of all offering associations.
   tags:
-    - courses
+    - offerings
   parameters:
-    - name: courseId
+    - name: offeringId
       in: path
-      description: Course ID
+      description: Offering ID
       required: true
       schema:
         type: string
@@ -40,7 +40,7 @@ get:
                   items:
                     type: array
                     items:
-                      $ref: '../schemas/Offering.yaml'
+                      $ref: '../schemas/Association.yaml'
               _links:
                 type: object
                 required:

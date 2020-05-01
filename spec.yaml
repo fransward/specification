@@ -38,7 +38,9 @@ tags:
   - name: courses
     description: The courses API provides a self-contained and formally structured learning experience. Aimed at providing learning outcomes to students. Usually placed in the context of a program.
   - name: offerings
-    description: The offerings API provides an instance of an offering which has a global timeframe, e.g. a period to which students can enroll.
+    description: The offerings API provides information about offerings which have a global timeframe, e.g. a period to which students can enroll.
+  - name: associations
+    description: The associations API provides information about the association between an offering and a person (e.g. students, lecturers, etc).
   - name: course results
     description: The course result API provides the aggregated result of a course based on the underlying test results by a student.
   - name: test results
@@ -86,6 +88,10 @@ paths:
     $ref: paths/CourseOfferingCollection.yaml
   /offerings/{offeringId}:
     $ref: paths/OfferingInstance.yaml
+  /offerings/{offeringId}/associations:
+    $ref: paths/OfferingAssociationCollection.yaml
+  /associations/{associationId}:
+    $ref: paths/AssociationInstance.yaml
   /course-results:
     $ref: paths/CourseResultCollection.yaml
   /course-results/{courseResultId}:

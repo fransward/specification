@@ -37,30 +37,14 @@ properties:
           href:
             type: string
             format: uri
-            example: /course-offerings/123
-      lecturers:
-        type: array
-        description: Links to the lecturers (persons) that are responsible for this course (ECTS)
-        items:
-          type: object
-          required:
-            - href
-            - title
-          properties:
-            href:
-              type: string
-              format: uri
-              example: /persons/123
-            title:
-              type: string
-              description: The display name of the person
-      schedules:
+            example: /offerings/123
+      associations:
         type: object
-        description: Link to the list of schedules for this course
+        description: Link to the list of associations for this offering
         required:
           - href
         properties:
           href:
             type: string
             format: uri
-            example: /schedules?courseOffering=123
+            example: /offerings/123/associations
