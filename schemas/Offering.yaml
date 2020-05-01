@@ -1,11 +1,28 @@
 type: object
 required:
   - offeringId
-  - _links
+  - academicYear
+  - period
 properties:
   offeringId:
     type: string
-    description: Unique id for this offering
+    description: Unique id of this offering
+  maxNumberStudents:
+    type: number
+    description: The maximum number of students allowd to enroll for this offering
+    format: int32
+    minimum: 0
+  currentNumberStudents:
+    type: number
+    description: The number of students that have already enrolled for this offering
+    format: int32
+    minimum: 0
+  academicYear:
+    type: string
+    description: The year in which this offering takes place
+  period:
+    type: string
+    description: The period in which this offering is offered
   _links:
     type: object
     required:
@@ -20,4 +37,30 @@ properties:
           href:
             type: string
             format: uri
-            example: /offerings/123
+            example: /course-offerings/123
+      lecturers:
+        type: array
+        description: Links to the lecturers (persons) that are responsible for this course (ECTS)
+        items:
+          type: object
+          required:
+            - href
+            - title
+          properties:
+            href:
+              type: string
+              format: uri
+              example: /persons/123
+            title:
+              type: string
+              description: The display name of the person
+      schedules:
+        type: object
+        description: Link to the list of schedules for this course
+        required:
+          - href
+        properties:
+          href:
+            type: string
+            format: uri
+            example: /schedules?courseOffering=123

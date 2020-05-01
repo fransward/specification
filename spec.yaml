@@ -37,8 +37,8 @@ tags:
     description: The programs API provides a coherent set of educational components, aimed at the realization of competences or objectives in the field of knowledge, insight, attitudes and skills that the person who completes the program must have.
   - name: courses
     description: The courses API provides a self-contained and formally structured learning experience. Aimed at providing learning outcomes to students. Usually placed in the context of a program.
-  - name: course offerings
-    description: The course offerings API provides an instance of a course which has a global timeframe, e.g. a period to which students can enroll and specific lecturers are assigned.
+  - name: offerings
+    description: The offerings API provides an instance of an offering which has a global timeframe, e.g. a period to which students can enroll.
   - name: course results
     description: The course result API provides the aggregated result of a course based on the underlying test results by a student.
   - name: test results
@@ -82,10 +82,10 @@ paths:
     $ref: paths/CourseCollection.yaml
   /courses/{courseId}:
     $ref: paths/CourseInstance.yaml
-  /course-offerings:
+  /courses/{courseId}/offerings:
     $ref: paths/CourseOfferingCollection.yaml
-  /course-offerings/{courseOfferingId}:
-    $ref: paths/CourseOfferingInstance.yaml
+  /offerings/{offeringId}:
+    $ref: paths/OfferingInstance.yaml
   /course-results:
     $ref: paths/CourseResultCollection.yaml
   /course-results/{courseResultId}:

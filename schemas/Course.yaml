@@ -78,16 +78,16 @@ properties:
             type: string
             format: uri
             example: /courses/123
-      courseOfferings:
+      offerings:
         type: object
-        description: Link to the list of courseOfferings for this course
+        description: Link to the list of offerings for this course
         required:
           - href
         properties:
           href:
             type: string
             format: uri
-            example: /coureOfferings?course=123
+            example: /courses/123/offerings
       coordinator:
         type: object
         description: Link to the coordinator (person) that is responsible, and can be contacted for this course
@@ -101,7 +101,6 @@ properties:
           title:
             type: string
             description: The display name of the person
-
       lecturers:
         type: array
         description: Links to the lecturers (persons) of this course (ECTS-lecturers)
