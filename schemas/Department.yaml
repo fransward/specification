@@ -7,6 +7,9 @@ properties:
   departmentId:
     type: string
     description: Unique id for this department
+  type:
+    type: string
+    description: The type of this department (e.g. institute, faculty, domain)
   name:
     type: string
     description: The name of this department

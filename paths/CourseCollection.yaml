@@ -12,12 +12,6 @@ get:
       required: false
       schema:
         type: string
-    - name: faculty
-      in: query
-      description: Filter by faculty (facultyId)
-      required: false
-      schema:
-        type: string
     - name: department
       in: query
       description: Filter by department (departmentId)
