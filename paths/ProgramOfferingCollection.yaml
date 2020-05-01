@@ -36,7 +36,7 @@ get:
                   items:
                     type: array
                     items:
-                      $ref: '../schemas/Offering.yaml'
+                      $ref: '../schemas/ProgramOffering.yaml'
               _links:
                 type: object
                 required:
