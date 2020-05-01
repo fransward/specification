@@ -27,6 +27,7 @@ properties:
     type: object
     required:
       - self
+      - associations
     properties:
       self:
         type: object

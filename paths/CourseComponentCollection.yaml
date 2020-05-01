@@ -1,0 +1,81 @@
+get:
+  summary: GET /courses/{courseId}/components
+  description: Get an ordered list of all course components.
+  tags:
+    - courses
+  parameters:
+    - name: courseId
+      in: path
+      description: Course ID
+      required: true
+      schema:
+        type: string
+    - $ref: '../parameters/pageSize.yaml'
+    - $ref: '../parameters/pageNumber.yaml'
+  responses:
+    '200':
+      description: OK
+      content:
+        application/hal+json:
+          schema:
+            type: object
+            required:
+              - pageSize
+              - _embedded
+              - _links
+            properties:
+              pageSize:
+                type: integer
+                format: int32
+                description: The number of items per page
+              pageNumber:
+                  type: integer
+                  format: int32
+                  description: The current page number
+              _embedded:
+                type: object
+                required:
+                  - items
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '../schemas/Component.yaml'
+              _links:
+                type: object
+                required:
+                  - self
+                properties:
+                  self:
+                    type: object
+                    required:
+                      - href
+                    properties:
+                      href:
+                        type: string
+                        format: uri
+                        description: Link to current page
+                  prev:
+                    type: object
+                    required:
+                      - href
+                    properties:
+                      href:
+                        type: string
+                        format: uri
+                        description: Link to previous page
+                  next:
+                    type: object
+                    required:
+                      - href
+                    properties:
+                      href:
+                        type: string
+                        format: uri
+                        description: Link to next page
+    '404':
+      description: Not Found
+      content:
+        application/problem+json:
+          schema:
+            $ref: '../schemas/Problem.yaml'

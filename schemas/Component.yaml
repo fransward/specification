@@ -1,0 +1,33 @@
+type: object
+required:
+  - componentId
+properties:
+  componentId:
+    type: string
+    description: Unique id of this component
+  _links:
+    type: object
+    required:
+      - self
+      - offerings
+    properties:
+      self:
+        type: object
+        description: Link to current resource
+        required:
+          - href
+        properties:
+          href:
+            type: string
+            format: uri
+            example: /components/123
+      offerings:
+        type: object
+        description: Link to the list of offerings for this component
+        required:
+          - href
+        properties:
+          href:
+            type: string
+            format: uri
+            example: /components/123/offerings
