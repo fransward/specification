@@ -95,16 +95,6 @@ properties:
             type: string
             format: uri
             example: /organization-units?student=123
-      educationalPlans:
-        type: object
-        description: Link to the list of educational plans with which this person is affiliated
-        required:
-          - href
-        properties:
-          href:
-            type: string
-            format: uri
-            example: /educational-plans?student=123
       courses:
         type: object
         description: Link to the list of courses for this person

@@ -49,12 +49,6 @@ get:
       required: false
       schema:
         type: string
-    - name: educationalPlan
-      in: query
-      description: Filter by educational plan (educationalPlanId)
-      required: false
-      schema:
-        type: string
     - name: course
       in: query
       description: Filter by course (courseId)

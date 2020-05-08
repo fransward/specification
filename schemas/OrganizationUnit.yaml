@@ -9,7 +9,7 @@ properties:
     description: Unique id for this organization unit
   type:
     type: string
-    description: The type of this organization unit (e.g. institute, faculty, domain)
+    description: The type of this organization unit (e.g. department, faculty, domain)
   name:
     type: string
     description: The name of this organization unit
@@ -31,22 +31,16 @@ properties:
             type: string
             format: uri
             example: /organization-units/123
-      educationalPlans:
-        type: array
-        description: Links to the educational plans for this organization unit
-        items:
-          type: object
-          required:
-            - href
-            - title
-          properties:
-            href:
-              type: string
-              format: uri
-              example: /educational-plans/123
-            title:
-              type: string
-              description: The name of the educational plan
+      programs:
+        type: object
+        description: Link to the list of programs for this organization unit
+        required:
+          - href
+        properties:
+          href:
+            type: string
+            format: uri
+            example: /programs?organizationUnit=123
       courses:
         type: object
         description: Link to the list of courses for this organization unit

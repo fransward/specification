@@ -1,21 +1,20 @@
 get:
   summary: GET /programs
-  description: Get an ordered list of all programs.
+  description: Get an ordered list of all programs, ordered by name.
   tags:
     - programs
   parameters:
     - $ref: '../parameters/pageSize.yaml'
     - $ref: '../parameters/pageNumber.yaml'
-    - name: order
-      in: query
-      description: The field to sort on
-      required: false
-      default: programId_asc
-      schema:
-        type: string
     - name: student
       in: query
       description: Filter by student (personId)
+      required: false
+      schema:
+        type: string
+    - name: organizationUnit
+      in: query
+      description: Filter by organization unit (organizationUnitId)
       required: false
       schema:
         type: string

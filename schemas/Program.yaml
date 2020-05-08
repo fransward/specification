@@ -18,10 +18,6 @@ properties:
     description: The number of EC's that can be archieved in this program
     format: int32
     minimum: 0
-  mainLanguage:
-    type: string
-    description: The main language in which the courses within this program are given, RFC3066
-    example: nl-NL
   qualificationAwarded:
     type: string
     description: Type of qualificaton that can be obtained on finishing the program

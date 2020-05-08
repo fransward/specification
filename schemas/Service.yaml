@@ -22,7 +22,7 @@ properties:
     description: URL of the API documentation, including general terms and privacy statement
   courseLevels:
     type: array
-    description: Set of course levels for the institution
+    description: Set of course levels for the organization
     items:
       type: string
     example:
@@ -30,7 +30,7 @@ properties:
       - Master
   roomTypes:
     type: array
-    description: Set of room types for the institution
+    description: Set of room types for the organization
     items:
       type: string
     example:
@@ -65,10 +65,9 @@ properties:
               format: uri
         example:
           - href: /persons
+          - href: /organization
           - href: /organization-units
-          - href: /educational-plans
           - href: /programs
-          - href: /institution
           - href: /courses
           - href: /course-offerings
           - href: /course-results

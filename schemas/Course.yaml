@@ -153,22 +153,6 @@ properties:
             title:
               type: string
               description: The name of the organization unit
-      educationalPlans:
-        type: array
-        description: Links to the educational plans where this course is part of
-        items:
-          type: object
-          required:
-            - href
-            - title
-          properties:
-            href:
-              type: string
-              format: uri
-              example: /educationalPlans/123
-            title:
-              type: string
-              description: The name of the educational plan
       programs:
         type: array
         description: Links to the programs where this course is part of

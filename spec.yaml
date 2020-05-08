@@ -30,9 +30,7 @@ tags:
   - name: organization units
     description: The organization units API provides the organizational units that are responsible for the execution and recognition of courses.
   - name: persons
-    description: The persons API provides information about persons related to an educational institute.
-  - name: educational plans
-    description: The educational plans API provides a coherent set of educational components, that a person is currently working on or is planning on completing. Usually based on a program.
+    description: The persons API provides information about persons related to an organization.
   - name: programs
     description: The programs API provides a coherent set of educational components, aimed at the realization of competences or objectives in the field of knowledge, insight, attitudes and skills that the person who completes the program must have.
   - name: courses
@@ -70,10 +68,6 @@ paths:
     $ref: paths/OrganizationUnitCollection.yaml
   /organization-units/{organizationUnitId}:
     $ref: paths/OrganizationUnitInstance.yaml
-  /educational-plans:
-    $ref: paths/EducationalPlanCollection.yaml
-  /educational-plans/{educationalPlanId}:
-    $ref: paths/EducationalPlanInstance.yaml
   /programs:
     $ref: paths/ProgramCollection.yaml
   /programs/{programId}:
