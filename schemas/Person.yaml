@@ -85,36 +85,16 @@ properties:
             type: string
             format: uri
             example: /persons/123
-      organizationUnits:
+      associations:
         type: object
-        description: Link to the list of organization units with which this person is affiliated
+        description: Link to the list of associations for this person
         required:
           - href
         properties:
           href:
             type: string
             format: uri
-            example: /organization-units?student=123
-      courses:
-        type: object
-        description: Link to the list of courses for this person
-        required:
-          - href
-        properties:
-          href:
-            type: string
-            format: uri
-            example: /courses?student=123
-      courseResults:
-        type: object
-        description: Link to the list of course results for this person
-        required:
-          - href
-        properties:
-          href:
-            type: string
-            format: uri
-            example: /course-results?student=123
+            example: /persons/123/associations
       testResults:
         type: object
         description: Link to the list of test results for this person

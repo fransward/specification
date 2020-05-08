@@ -30,3 +30,13 @@ properties:
             type: string
             format: uri
             example: /offerings/123
+      person:
+        type: object
+        description: Link to the associated person
+        required:
+          - href
+        properties:
+          href:
+            type: string
+            format: uri
+            example: /persons/123

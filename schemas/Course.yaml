@@ -117,16 +117,6 @@ properties:
             title:
               type: string
               description: The display name of the person
-      courseResults:
-        type: object
-        description: Link to the course results for this course
-        required:
-          - href
-        properties:
-          href:
-            type: string
-            format: uri
-            example: /course-results?course=123
       testResults:
         type: object
         description: Link to the test results for this course

@@ -64,6 +64,8 @@ paths:
     $ref: paths/PersonCollection.yaml
   /persons/{personId}:
     $ref: paths/PersonInstance.yaml
+  /persons/{personId}/associations:
+    $ref: paths/PersonAssociationCollection.yaml
   /organization-units:
     $ref: paths/OrganizationUnitCollection.yaml
   /organization-units/{organizationUnitId}:
@@ -94,10 +96,6 @@ paths:
     $ref: paths/OfferingAssociationCollection.yaml
   /associations/{associationId}:
     $ref: paths/AssociationInstance.yaml
-  /course-results:
-    $ref: paths/CourseResultCollection.yaml
-  /course-results/{courseResultId}:
-    $ref: paths/CourseResultInstance.yaml
   /test-results:
     $ref: paths/TestResultCollection.yaml
   /test-results/{testResultId}:

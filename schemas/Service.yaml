@@ -69,8 +69,7 @@ properties:
           - href: /organization-units
           - href: /programs
           - href: /courses
-          - href: /course-offerings
-          - href: /course-results
+          - href: /offerings
           - href: /test-results
           - href: /buildings
           - href: /rooms

@@ -40,7 +40,10 @@ get:
                   items:
                     type: array
                     items:
-                      $ref: '../schemas/Association.yaml'
+                      oneOf:
+                        - $ref: '../schemas/ProgramOfferingAssociation.yaml'
+                        - $ref: '../schemas/CourseOfferingAssociation.yaml'
+                        - $ref: '../schemas/ComponentOfferingAssociation.yaml'
               _links:
                 type: object
                 required:
