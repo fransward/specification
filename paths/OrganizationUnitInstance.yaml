@@ -1,12 +1,12 @@
 get:
-  summary: GET /departments/{departmentId}
-  description: Get a single department.
+  summary: GET /organization-units/{organizationUnitId}
+  description: Get a single organization unit.
   tags:
-    - departments
+    - organization units
   parameters:
-    - name: departmentId
+    - name: organizationUnitId
       in: path
-      description: department ID
+      description: Organization unit ID
       required: true
       schema:
         type: string
@@ -16,7 +16,7 @@ get:
       content:
         application/hal+json:
           schema:
-            $ref: '../schemas/Department.yaml'
+            $ref: '../schemas/OrganizationUnit.yaml'
     '404':
       description: Not Found
       content:

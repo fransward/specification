@@ -4,18 +4,18 @@ required:
   - description
   - _links
 properties:
-  institutionId:
+  organizationId:
     type: string
-    description: id of the institution
+    description: id of the organization
   brin:
     type: string
-    description: Brincode of the institution
+    description: BRIN-code of the organization
   name:
     type: string
-    description: Name of the institution
+    description: Name of the organization
   description:
     type: string
-    description: Any general description of the institution should clearly mention the type of higher education institution, especially in the case of a binary system. In Dutch; universiteit (university) or hogeschool (university of applied sciences).
+    description: Any general description of the organization should clearly mention the type of higher education organization, especially in the case of a binary system. In Dutch; universiteit (university) or hogeschool (university of applied sciences).
   academicCalendar:
      type: object
      description: links to academic calenders per year
@@ -25,7 +25,7 @@ properties:
          description: year combination
        calender:
           type: url
-          description: Link to the academic calender of the institution (e.g. https://www.roosterrapporten.hu.nl/1718/jaarroosters/HU/timetable_academicyear_calender.pdf)
+          description: Link to the academic calender of the organization (e.g. https://www.roosterrapporten.hu.nl/1718/jaarroosters/HU/timetable_academicyear_calender.pdf)
   address:
     type: object
     description: the full street address including house number and street name of main building
@@ -73,10 +73,10 @@ properties:
           href:
             type: string
             format: uri
-            example: /institution
+            example: /organization
       programs:
         type: object
-        description: Link to the list of programs at this institution
+        description: Link to the list of programs of this organization
         required:
           - href
         properties:

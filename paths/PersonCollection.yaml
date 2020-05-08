@@ -43,9 +43,9 @@ get:
           - member
           - affiliate
           - organization
-    - name: department
+    - name: organizationUnit
       in: query
-      description: Filter by department (departmentId)
+      description: Filter by organizationUnit (organizationUnitId)
       required: false
       schema:
         type: string

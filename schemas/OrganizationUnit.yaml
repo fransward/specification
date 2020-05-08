@@ -1,21 +1,21 @@
 type: object
 required:
-  - departmentId
+  - organizationUnitId
   - name
   - _links
 properties:
-  departmentId:
+  unitId:
     type: string
-    description: Unique id for this department
+    description: Unique id for this organization unit
   type:
     type: string
-    description: The type of this department (e.g. institute, faculty, domain)
+    description: The type of this organization unit (e.g. institute, faculty, domain)
   name:
     type: string
-    description: The name of this department
+    description: The name of this organization unit
   description:
     type: string
-    description: The description of this department
+    description: The description of this organization unit
   _links:
     type: object
     required:
@@ -30,10 +30,10 @@ properties:
           href:
             type: string
             format: uri
-            example: /departments/123
+            example: /organization-units/123
       educationalPlans:
         type: array
-        description: Links to the educational plans for this department
+        description: Links to the educational plans for this organization unit
         items:
           type: object
           required:
@@ -49,11 +49,11 @@ properties:
               description: The name of the educational plan
       courses:
         type: object
-        description: Link to the list of courses for this department
+        description: Link to the list of courses for this organization unit
         required:
           - href
         properties:
           href:
             type: string
             format: uri
-            example: /courses?department=123
+            example: /courses?organizationUnit=123

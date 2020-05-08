@@ -65,7 +65,7 @@ properties:
               format: uri
         example:
           - href: /persons
-          - href: /departments
+          - href: /organization-units
           - href: /educational-plans
           - href: /programs
           - href: /institution

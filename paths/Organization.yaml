@@ -1,0 +1,12 @@
+get:
+  summary: GET /organization
+  description: Get organization details of the provider of this service.
+  tags:
+    - organization
+  responses:
+    '200':
+      description: OK
+      content:
+        application/hal+json:
+          schema:
+            $ref: '../schemas/Organization.yaml'

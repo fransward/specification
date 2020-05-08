@@ -24,13 +24,13 @@ info:
     url: logo.png
 tags:
   - name: service metadata
-    description: The service API provides additional metadata needed to make the OOAPI fit for this educational institution.
-  - name: institution
-    description: Information on the institution (of higher education) that is exposing this API.
+    description: The service API provides additional metadata needed to make the OOAPI fit for this organization.
+  - name: organization
+    description: Information on the organization that is exposing this API.
+  - name: organization units
+    description: The organization units API provides the organizational units that are responsible for the execution and recognition of courses.
   - name: persons
     description: The persons API provides information about persons related to an educational institute.
-  - name: departments
-    description: The departments API provides the organizational department that is responsible for the execution and recognition of courses.
   - name: educational plans
     description: The educational plans API provides a coherent set of educational components, that a person is currently working on or is planning on completing. Usually based on a program.
   - name: programs
@@ -60,16 +60,16 @@ tags:
 paths:
   /:
     $ref: paths/Service.yaml
-  /institution:
-    $ref: paths/Institution.yaml
+  /organization:
+    $ref: paths/Organization.yaml
   /persons:
     $ref: paths/PersonCollection.yaml
   /persons/{personId}:
     $ref: paths/PersonInstance.yaml
-  /departments:
-    $ref: paths/DepartmentCollection.yaml
-  /departments/{DepartmentId}:
-    $ref: paths/DepartmentInstance.yaml
+  /organization-units:
+    $ref: paths/OrganizationUnitCollection.yaml
+  /organization-units/{organizationUnitId}:
+    $ref: paths/OrganizationUnitInstance.yaml
   /educational-plans:
     $ref: paths/EducationalPlanCollection.yaml
   /educational-plans/{educationalPlanId}:

@@ -1,8 +1,8 @@
 get:
-  summary: GET /departments
-  description: Get an ordered list of all departments.
+  summary: GET /organization-units
+  description: Get an ordered list of all organization units.
   tags:
-    - departments
+    - organization units
   parameters:
     - $ref: '../parameters/pageSize.yaml'
     - $ref: '../parameters/pageNumber.yaml'
@@ -47,7 +47,7 @@ get:
                   items:
                     type: array
                     items:
-                      $ref: '../schemas/Department.yaml'
+                      $ref: '../schemas/OrganizationUnit.yaml'
               _links:
                 type: object
                 required:

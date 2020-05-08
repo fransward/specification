@@ -12,9 +12,9 @@ get:
       required: false
       schema:
         type: string
-    - name: department
+    - name: organizationUnit
       in: query
-      description: Filter by department (departmentId)
+      description: Filter by organization unit (organizationUnitId)
       required: false
       schema:
         type: string
