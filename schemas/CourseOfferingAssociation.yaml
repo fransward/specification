@@ -9,7 +9,7 @@ allOf:
         description: Boolean, representing whether the student did or did not pass the course
       grade:
         type: string
-        description: The average of all test results
+        description: The average grade for all components within this course offering
       comment:
         type: string
         description: The comment on the result for the course

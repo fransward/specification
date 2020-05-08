@@ -55,10 +55,7 @@ properties:
     description: An overview of the literature and other resources that is used in this course (ECTS-recommended reading and other sources)
   exams:
     type: string
-    description: A description of the way exams for this course are taken  (ECTS-assessment method and criteria)
-  schedule:
-    type: string
-    description: A description of the timeframes, when this course takes place (ECTS-Semester/trimester when the component is delivered)
+    description: A description of the way exams for this course are taken (ECTS-assessment method and criteria)
   link:
     type: string
     description: The url containing the address of the website with more information about the course
@@ -101,32 +98,6 @@ properties:
           title:
             type: string
             description: The display name of the person
-      lecturers:
-        type: array
-        description: Links to the lecturers (persons) of this course (ECTS-lecturers)
-        items:
-          type: object
-          required:
-            - href
-            - title
-          properties:
-            href:
-              type: string
-              format: uri
-              example: /persons/123
-            title:
-              type: string
-              description: The display name of the person
-      testResults:
-        type: object
-        description: Link to the test results for this course
-        required:
-          - href
-        properties:
-          href:
-            type: string
-            format: uri
-            example: /test-results?course=123
       organizationUnits:
         type: array
         description: Links to the organization units where this course is given

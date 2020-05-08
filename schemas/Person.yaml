@@ -95,23 +95,3 @@ properties:
             type: string
             format: uri
             example: /persons/123/associations
-      testResults:
-        type: object
-        description: Link to the list of test results for this person
-        required:
-          - href
-        properties:
-          href:
-            type: string
-            format: uri
-            example: /test-results?student=123
-      schedules:
-        type: object
-        description: Link to list of the schedules for this person
-        required:
-          - href
-        properties:
-          href:
-            type: string
-            format: uri
-            example: /schedules?student=123

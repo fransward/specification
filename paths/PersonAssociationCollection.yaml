@@ -39,9 +39,9 @@ get:
                 format: int32
                 description: The number of items per page
               pageNumber:
-                  type: integer
-                  format: int32
-                  description: The current page number
+                type: integer
+                format: int32
+                description: The current page number
               _embedded:
                 type: object
                 required:

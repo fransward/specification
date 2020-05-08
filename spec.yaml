@@ -41,16 +41,10 @@ tags:
     description: The offerings API provides information about offerings which have a global timeframe, e.g. a period to which students can enroll.
   - name: associations
     description: The associations API provides information about the association between an offering and a person (e.g. students, lecturers, etc).
-  - name: course results
-    description: The course result API provides the aggregated result of a course based on the underlying test results by a student.
-  - name: test results
-    description: The test result API provides the result of executing a test activity.
   - name: buildings
     description: The building API provides a building that is currently used by the organization. Including all location details.
   - name: rooms
     description: The rooms API provides the part of a building where an activity can take place. Including detail information on the resources available, number of seats, etc. (Updated continuously)
-  - name: schedules
-    description: The schedules API provides the planned learning activity visible in a student view and a lecturer view. Schedules provide the answer to who, what, when, where, additional information for a learnign activity. (Updated on ad hoc-base)
   - name: news feeds
     description: The news feeds API provides An aggregation of news items regarding a specific theme. (Updated on ad hoc-base)
   - name: news items
@@ -96,10 +90,6 @@ paths:
     $ref: paths/OfferingAssociationCollection.yaml
   /associations/{associationId}:
     $ref: paths/AssociationInstance.yaml
-  /test-results:
-    $ref: paths/TestResultCollection.yaml
-  /test-results/{testResultId}:
-    $ref: paths/TestResultInstance.yaml
   /buildings:
     $ref: paths/BuildingCollection.yaml
   /buildings/{buildingId}:
@@ -108,14 +98,6 @@ paths:
     $ref: paths/RoomCollection.yaml
   /rooms/{roomId}:
     $ref: paths/RoomInstance.yaml
-  /schedules:
-    $ref: paths/ScheduleCollection.yaml
-  /schedules/{scheduleId}:
-    $ref: paths/ScheduleInstance.yaml
-  /tests:
-    $ref: paths/TestCollection.yaml
-  /tests/{testId}:
-    $ref: paths/TestInstance.yaml
   /news-feeds:
     $ref: paths/NewsFeedCollection.yaml
   /news-feeds/{newsFeedId}:

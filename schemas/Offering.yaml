@@ -6,6 +6,9 @@ properties:
   offeringId:
     type: string
     description: Unique id of this offering
+  description:
+    type: string
+    description: The description of this offerings
   maxNumberStudents:
     type: number
     description: The maximum number of students allowd to enroll for this offering
