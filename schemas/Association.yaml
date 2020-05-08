@@ -20,3 +20,13 @@ properties:
             type: string
             format: uri
             example: /associations/123
+      offering:
+        type: object
+        description: Link to the parent offering
+        required:
+          - href
+        properties:
+          href:
+            type: string
+            format: uri
+            example: /offerings/123

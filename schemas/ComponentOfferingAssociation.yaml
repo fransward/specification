@@ -1,0 +1,4 @@
+allOf:
+  - $ref: './Association.yaml'
+  - type: object
+    properties: {}

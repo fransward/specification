@@ -16,7 +16,10 @@ get:
       content:
         application/hal+json:
           schema:
-            $ref: '../schemas/Association.yaml'
+            oneOf:
+              - $ref: '../schemas/ProgramOfferingAssociation.yaml'
+              - $ref: '../schemas/CourseOfferingAssociation.yaml'
+              - $ref: '../schemas/ComponentOfferingAssociation.yaml'
     '404':
       description: Not Found
       content:
