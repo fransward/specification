@@ -4,7 +4,7 @@ required:
   - name
   - _links
 properties:
-  unitId:
+  organizationUnitId:
     type: string
     description: Unique id for this organization unit
   type:
